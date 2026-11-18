@@ -1,0 +1,23 @@
+name: trade_signal_ai
+description: "TradeSignal AI - tin hieu Swing mock, khong giao dich tien that."
+publish_to: 'none'
+version: 1.2.3+6
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/dgn_logo.jpg
+    - assets/dgn-mark-clear.png
+    - assets/dgn-logo-clear.png
+    - assets/ceo-founder.jpg
