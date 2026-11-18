@@ -37,6 +37,20 @@ Phiên bản hiện tại: **1.2.3+6** (package `com.tradesignal.ai`, minSdk 21,
 - Lịch sử tín hiệu trên web chỉ giữ trong lúc mở trang ở các bản web cũ;
   bản APK v1.2.3 đã lưu bền qua lần mở app.
 
+## Web (GitHub Pages)
+
+Repo này có sẵn workflow `.github/workflows/deploy-web.yml`: mỗi lần đẩy
+code lên nhánh `main`, GitHub tự build bản web (`flutter build web`) và đăng
+lên Pages. Bật một lần trong repo: Settings → Pages → Build and deployment →
+Source: **GitHub Actions**. Trang chạy ở:
+
+https://lustrade4living-create.github.io/DGN-TradingSignal/
+
+Lưu ý: bản web cần đủ file ảnh trong `assets/` thì build mới chạy được.
+Trên web, phần lưu cài đặt/lịch sử không giữ được sau khi đóng trang (kênh
+lưu file của Android không có trên web) — lịch sử tín hiệu chỉ giữ trong lúc
+mở trang.
+
 ## Build APK
 
 ```sh
